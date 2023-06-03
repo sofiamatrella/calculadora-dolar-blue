@@ -18,12 +18,12 @@ export default async function Home() {
 
   return (
     <main className={styles.main}>
+      <Calculator price={data.blue.value_sell} />
       <DolarPrice
         sell_price={data.blue.value_sell}
         buy_price={data.blue.value_buy}
         updated={data.last_update}
       />
-      {/* <Calculator price={data.blue.value_sell} /> */}
     </main>
   );
 }

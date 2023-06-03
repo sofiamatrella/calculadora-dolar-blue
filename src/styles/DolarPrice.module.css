@@ -1,5 +1,6 @@
 .box {
-  width: 30%;
+  min-width: 30%;
+  width: fit-content;
   border-radius: 5px;
   box-shadow: 0 12px 15px rgb(140 152 164 / 10%);
   border: 1px solid #c5d2da;
@@ -23,4 +24,40 @@
 
 .text {
   color: grey;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.label {
+  color: grey;
+  font-weight: bold;
+}
+
+.input {
+  border: 1px solid #c5d2da;
+  border-radius: 5px;
+  /* padding: 10px; */
+  padding-left: 2.5rem;
+  height: 50px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.flag {
+  height: 1.5rem;
+  width: 1.5rem;
+
+  padding: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
 }
