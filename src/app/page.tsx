@@ -4,7 +4,9 @@ import DolarPrice from "@/components/DolarPrice";
 import Calculator from "@/components/Calculator";
 
 async function getData() {
-  const res = await fetch("https://api.bluelytics.com.ar/v2/latest");
+  const res = await fetch("https://api.bluelytics.com.ar/v2/latest", {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
